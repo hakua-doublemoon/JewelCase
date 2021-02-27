@@ -10,6 +10,11 @@ capybara-*.html
 *.orig
 rerun.txt
 pickle-email-*.html
+**/debug/*
+
+log.txt
+favicon.ico
+VlcServer.pid
 
 # Ignore all logfiles and tempfiles.
 /log/*

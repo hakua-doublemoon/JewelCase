@@ -1,0 +1,189 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+/*  https://saruwakakun.com/html-css/reference/buttons#section2 */
+
+.playlist-div {
+    overflow-y:scroll;
+    width: 98%;
+}
+
+.playlist-table {
+    width: 100%;
+}
+
+.playlist-entry {
+    border: solid 2px #EEEEFF;
+    padding: 0.1em 1em;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    height: 80px;
+    vertical-align: middle;
+    border-collapse: separate;
+    border-spacing: 20px 0;
+}
+/*  
+.playlist-entry:hover {
+    /* display: inline-block; /
+
+    /* text-decoration: none; /
+    /* border-radius: 3px; /
+    /* transition: .4s; /
+    background: #DDF;
+
+    background: #EEEEFF;
+    font-weight: bold;
+    color: #000;
+}
+*/
+.album-name {
+    margin: 1px;
+    font-size: 30px;
+    color: #000;
+    white-space: nowrap;
+}
+
+.album-artist, .album-genre {
+    display: table-cell;
+    margin: 5px;
+    font-size: 25px;
+    color: #333;
+}
+
+.play-console {
+    /* float: left; */
+    position: fixed;
+    top: 15px;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    background-color: #FFF;
+    margin-right: 0px;
+    z-index: 10;
+}
+
+.play-button {
+    display: inline-block;
+    margin: 15px;
+    height: 70px;
+    width: 70px;
+    background: url('https://api.iconify.design/ic:sharp-play-circle-outline.svg') no-repeat center center / contain;
+}
+
+.play-back {
+    float: left;
+    margin: 15px;
+    height: 70px;
+    width: 70px;
+    background: url('https://api.iconify.design/ic:sharp-arrow-back.svg') no-repeat center center / contain;
+}
+
+.play-stop {
+    display: inline-block;
+    margin: 15px;
+    height: 70px;
+    width: 70px;
+    background: url('https://api.iconify.design/mdi:stop-circle.svg') no-repeat center center / contain;
+}
+
+.play-vol-down {
+    display: inline-block;
+    margin: 15px;
+    height: 70px;
+    width: 70px;
+    background: url('https://api.iconify.design/ic:outline-volume-down.svg') no-repeat center center / contain;
+}
+
+.play-vol-up {
+    display: inline-block;
+    margin: 15px;
+    height: 70px;
+    width: 70px;
+    background: url('https://api.iconify.design/ic:baseline-volume-up.svg') no-repeat center center / contain;
+}
+
+.play-button:hover, .play-stop:hover {
+    border: solid 2px #AAAAFF;
+    margin: 13px;
+    border-radius: 50%;
+}
+
+.jacket {
+    position: fixed;
+    top: 115px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.jacket img {
+    width: 100%;
+}
+
+.track-div {
+    position: relative;
+    /* overflow-y: scroll; */
+    overflow-x: hidden;
+    margin-top: 115px;
+    width: 98%;
+    height: 80vh;
+    z-index: 2;
+}
+
+.track-entry {
+    /* display: inline-block; */
+    font-family: 'Open Sans', sans-serif;
+    border: solid 2px #EEEEFF;
+    background: #FFFFFF80;
+    width: 100%;
+    height: 80px;
+    /* vertical-align: top; */
+}
+
+.track-entry:hover {
+    background: #EEEEFFC0;
+    color: #000;
+}
+
+.track-number {
+    float: left;
+    font-size: 30px;
+    width: 40px;
+    margin: 0px 10px 0px 30px;
+    text-align:right;
+}
+
+.track-number-after {
+    float: left;
+    font-size: 30px;
+    margin: 0px 10px;
+}
+
+.track-title {
+    float: left;
+    font-size: 30px;
+    margin: 0px 10px;
+    white-space: nowrap;
+    width: calc(90% - 300px);
+}
+
+.track-artist {
+    clear: left;
+    font-size: 25px;
+    margin: 0px 65px;
+    color: #333;
+    text-align: left;
+}

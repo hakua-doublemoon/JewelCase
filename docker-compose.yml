@@ -1,0 +1,30 @@
+version: "3.9"
+services:
+  db:
+    image: postgres
+    volumes:
+      - ./tmp/db:/var/lib/postgresql/data
+    environment:
+      # POSTGRES_PASSWORD
+      POSTGRES_PASSWORD: ***
+    ports:
+      - "5432:5432"
+  web:
+    build: .
+    container_name: JewelCase
+    command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 8895 -b '0.0.0.0'"
+    volumes:
+      - .:/myapp
+      - ***:/var/music
+    environment:
+      MUSIC_ROOT: '/var/music/'
+      # Your Music Folder
+      HOST_MUSIC_ROOT: ***
+      JACKET_PATH: '/var/music/9_JACKETS/'
+      VLC_USER: ***
+      VLC_USER_PASSWORD: ***
+    ports:
+      - "8895:8895"
+    depends_on:
+      - db
+

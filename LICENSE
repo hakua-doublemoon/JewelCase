@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2021 白亜
+Copyright (c) 2021 白亜 (hakua-doublemoon)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +19,17 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+
+Licenses of using gems:
+
+net-ssh: https://github.com/net-ssh/net-ssh/blob/master/LICENSE.txt
+net-ssh-cli: https://github.com/swisscom/net-ssh-cli/blob/master/LICENSE.txt
+sinatra: https://github.com/sinatra/sinatra/blob/master/LICENSE
+taglib-ruby: https://rubydoc.info/gems/taglib-ruby/frames
+jquery-rails: https://github.com/rails/jquery-rails/blob/master/MIT-LICENSE
+
+
+ICONs: 
+
+https://github.com/material-icons/material-icons/blob/master/LICENSE

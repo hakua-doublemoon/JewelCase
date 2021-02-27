@@ -1,0 +1,21 @@
+<div class="play-console">
+    <div class="play-back"></div>
+    <div class="play-button"></div>
+    <div class="play-stop"></div>
+    <div class="play-vol-down"></div>
+    <div class="play-vol-up"></div>
+</div>
+
+<% if  jacket_name != ""  then %>
+    <div class="jacket">
+        <%= image_tag '/jackets/' + jacket_name %>
+    </div>
+<% end %>
+
+<div class="track-div">
+    <%=
+        render :partial => "track", :collection => tracklist
+    %>
+</div>
+
+<p><%= debug_info %></p>
